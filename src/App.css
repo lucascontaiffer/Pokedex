@@ -1,0 +1,396 @@
+* {
+  margin: 0px;
+}
+
+button{
+  cursor: pointer;
+}
+nav{
+  background-color: black;
+}
+.favorite-count{
+  color: white;
+}
+nav {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.navbar-img {
+  width: 160px;
+}
+
+.searchbar-container {
+  display: flex;
+  margin: 0px auto;
+  padding: 0 20px;
+  align-items: center;
+}
+
+.searchbar {
+  background-color: white;
+  margin-right: 20px;
+}
+
+.searchbar input {
+  padding: 10px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  border: none;
+}
+
+.searchbar-btn button {
+  background-color: #0e6f9f;
+  border: none;
+  border-radius: 10px;
+  height: 44px;
+  color: white;
+  padding: 10px 12px;
+}
+
+.pokedex-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.pokedex-grid {
+  display: grid;
+  gap: 10px;
+  margin: 0 200px 0 200px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.pokemon-image {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+.pokemon-image-container {
+  padding: 0px 5px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 10px 10px 0px;
+  flex: 1;
+}
+
+.card-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-top h3 {
+  text-transform: capitalize;
+}
+
+.card-bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pokemon-type {
+  display: flex;
+}
+
+
+.pagination-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.pokemon-heart-btn {
+  border: none;
+  background-color: white;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
+  padding: 4px;
+  cursor: pointer;
+  align-items: center;
+}
+
+.not-found-text {
+  text-align: center;
+  font-size: 1.25rem;
+  padding: 20px;
+}
+
+.App {
+  text-align: center;
+}
+
+
+/*card type styles*/
+.pokemon-card {
+  display: flex;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+}
+.grass-type-card{
+  display: flex;
+  color: white; 
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  background-image: url("https://t4.ftcdn.net/jpg/05/73/61/65/360_F_573616514_fFYnBgJ3OdwedRJ6sBbAhCyOyGXkHG6y.jpg")
+}
+.fire-type-card{
+  display: flex;
+  color: white;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  background-image: url("https://t3.ftcdn.net/jpg/01/67/71/18/360_F_167711829_7JrL8KvQvMAoIJEDF4RXvVWGYENsqvjo.jpg")
+}
+.water-type-card{
+  display: flex;
+  color: white;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  background-image: url("https://wallpapersmug.com/large/8524eb/blue-bubbles-abstract.jpg")
+}
+.poison-type-card{
+  display: flex;
+  color: white;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  background-image: url("https://t4.ftcdn.net/jpg/05/34/82/27/360_F_534822766_vY4Fa2x8JA7c7Zwzp9gOoQOTP6Z4PjMm.jpg")
+}
+.bug-type-card{
+  display: flex;
+  color: white;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  background-image: url("https://www.pixel4k.com/wp-content/uploads/2018/03/Green%20Bubbles665479937.jpg")
+}
+.normal-type-card{
+  display: flex;
+  color: white;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  background-image: url("https://us.123rf.com/450wm/constantincornel/constantincornel1503/constantincornel150300002/38609649-rising-orange-bubbles.jpg?ver=6")
+}
+.flying-type-card{
+  display: flex;
+  color: white;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  background-image: url("https://wallpapers-hub.art/wallpaper-images/514584.jpg")
+}
+.electric-type-card{
+  display: flex;
+  color: white;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  background-image: url("https://previews.123rf.com/images/shutter999/shutter9991802/shutter999180200073/96653330-golden-yellow-bubble-oil-abstract-background.jpg")
+}
+.fairy-type-card{
+  display: flex;
+  color: white;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  background-image: url("https://c8.alamy.com/comp/KDY35G/abstract-background-from-floating-pink-bubbles-KDY35G.jpg")
+}
+.ground-type-card{
+  display: flex;
+  color: white;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  background-image: url("https://images3.alphacoders.com/115/1151186.jpg")
+}
+.fighting-type-card{
+  display: flex;
+  color: white;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  background-image: url("https://img.freepik.com/free-vector/abstract-colourful-mosaic-wave-line-background_460848-10815.jpg?w=2000")
+}
+.ghost-type-card{
+  display: flex;
+  color: white;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  background-image: url("https://t4.ftcdn.net/jpg/05/34/82/27/360_F_534822766_vY4Fa2x8JA7c7Zwzp9gOoQOTP6Z4PjMm.jpg")
+}
+.rock-type-card{
+  display: flex;
+  color: white;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  background-image: url("https://c8.alamy.com/comp/MF0A8T/black-and-white-background-with-big-and-small-grey-bubbles-inside-a-gray-liquid-MF0A8T.jpg")
+}
+.ice-type-card{
+  display: flex;
+  color: white;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  background-image: url("https://w0.peakpx.com/wallpaper/292/723/HD-wallpaper-bubbles-aqua-splash-bubbles-blue.jpg")
+}
+.psychic-type-card{
+  display: flex;
+  color: white;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  background-image: url("https://t4.ftcdn.net/jpg/05/34/82/27/360_F_534822766_vY4Fa2x8JA7c7Zwzp9gOoQOTP6Z4PjMm.jpg")
+}
+.steel-type-card{
+  display: flex;
+  color: white;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  background-image: url("https://c8.alamy.com/comp/MF0A8T/black-and-white-background-with-big-and-small-grey-bubbles-inside-a-gray-liquid-MF0A8T.jpg")
+}
+.dragon-type-card{
+  display: flex;
+  color: white;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  background-image: url("https://cutewallpaper.org/27/background-water-wallpaper/77491582.jpg")
+}
+.dark-type-card{
+  display: flex;
+  color: white;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  background-image: url("https://www.shutterstock.com/image-photo/water-drop-on-black-260nw-748656538.jpg")
+}
+
+
+/* Type styles*/
+.grass-type{
+  background-color: #228B22;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 10px;
+}
+.water-type{
+  background-color: #00BFFF;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 10px;
+}
+.fire-type{
+  background-color: #FF4500;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 10px;
+}
+.poison-type{
+  background-color: #BA55D3;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 10px;
+}
+.bug-type{
+  background-color: #006400;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 10px;
+}
+.normal-type{
+  background-color: #808000;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 10px;
+}
+.flying-type{
+  background-color: #20B2AA;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 10px;
+}
+.electric-type{
+  background-color: #FFA500;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 10px;
+}
+.fairy-type{
+  background-color: #FF69B4;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 10px;
+}
+.ground-type{
+  background-color: #B8860B;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 10px;
+}
+.fighting-type{
+  background-color: #800000;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 10px;
+}
+.ghost-type{
+  background-color: #663399;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 10px;
+}
+.rock-type{
+  background-color: #808080;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 10px;
+}
+.ice-type{
+  background-color: #AFEEEE;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 10px;
+}
+.psychic-type{
+  background-color: #8B008B;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 10px;
+}
+.steel-type{
+  background-color: #778899;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 10px;
+}
+.dragon-type{
+  background-color: #1E90FF;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 10px;
+}
+.dark-type{
+  background-color: #000000;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 10px;
+}
